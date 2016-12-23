@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.javi.ejercicio_jmedinilla.EJ_UNO"
+    android:background="#7777E4">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="166dp"
+        android:layout_marginEnd="166dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout"
+        android:weightSum="1">
+
+        <EditText
+            android:layout_width="173dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/caja_dolar"
+            android:textColor="#c1fff4" />
+
+        <EditText
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/caja_euro"
+            android:textColor="#c1fff4" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="168dp"
+                android:layout_height="wrap_content"
+                android:text="Dólares a euros"
+                android:id="@+id/radio_dolar"
+                android:checked="true"
+                android:textColor="#c1fff4" />
+
+            <RadioButton
+                android:layout_width="171dp"
+                android:layout_height="wrap_content"
+                android:text="Euros a dólares"
+                android:id="@+id/radio_euro"
+                android:textColor="#c1fff4" />
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Convertir"
+            android:id="@+id/btn_convertirDivisa"
+            android:background="@drawable/rounded_corner2"
+            android:textColor="#c1fff4" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Dólares"
+        android:id="@+id/textView2"
+        android:layout_marginRight="84dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginTop="16dp"
+        android:layout_alignTop="@+id/linearLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#c1fff4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Euros"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="16dp"
+        android:textColor="#c1fff4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elegir valor de cambio de divisas"
+        android:id="@+id/btn_elegirCambio"
+        android:height="120dp"
+        android:layout_marginTop="66dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:background="@drawable/rounded_corner2"
+        android:textColor="#c1fff4" />
+</RelativeLayout>

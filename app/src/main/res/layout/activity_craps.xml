@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.javi.ejercicio_jmedinilla.CRAPS"
+    android:background="#AA6414">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="-"
+        android:id="@+id/lbl_numero_uno"
+        android:layout_marginTop="135dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/lbl_numero_dos"
+        android:layout_toStartOf="@+id/lbl_numero_dos"
+        android:layout_marginRight="76dp"
+        android:layout_marginEnd="76dp"
+        android:textSize="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="+"
+        android:id="@+id/textView11"
+        android:layout_marginRight="28dp"
+        android:layout_marginEnd="28dp"
+        android:textSize="35dp"
+        android:layout_alignTop="@+id/lbl_numero_uno"
+        android:layout_toLeftOf="@+id/lbl_numero_dos"
+        android:layout_toStartOf="@+id/lbl_numero_dos" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="-"
+        android:id="@+id/lbl_numero_dos"
+        android:layout_alignTop="@+id/textView11"
+        android:layout_centerHorizontal="true"
+        android:textSize="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="="
+        android:id="@+id/textView12"
+        android:layout_alignTop="@+id/lbl_numero_dos"
+        android:layout_toRightOf="@+id/lbl_numero_dos"
+        android:layout_toEndOf="@+id/lbl_numero_dos"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp"
+        android:textSize="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/lbl_numero_resultado"
+        android:layout_alignTop="@+id/textView12"
+        android:layout_toRightOf="@+id/textView12"
+        android:layout_toEndOf="@+id/textView12"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:textSize="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Primera tirada:"
+        android:id="@+id/textView13"
+        android:textSize="30dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/lbl_numero_resultado"
+        android:layout_toStartOf="@+id/lbl_numero_resultado" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/lbl_numero_primera"
+        android:layout_alignTop="@+id/textView13"
+        android:layout_alignLeft="@+id/lbl_numero_resultado"
+        android:layout_alignStart="@+id/lbl_numero_resultado"
+        android:textSize="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Victorias:"
+        android:id="@+id/textView14"
+        android:layout_marginTop="59dp"
+        android:textSize="35dp"
+        android:layout_below="@+id/lbl_numero_primera"
+        android:layout_alignLeft="@+id/lbl_numero_uno"
+        android:layout_alignStart="@+id/lbl_numero_uno"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Derrotas:"
+        android:id="@+id/textView15"
+        android:layout_below="@+id/textView14"
+        android:layout_alignRight="@+id/textView14"
+        android:layout_alignEnd="@+id/textView14"
+        android:layout_marginTop="35dp"
+        android:textSize="35dp"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/lbl_numero_victorias"
+        android:textSize="35dp"
+        android:layout_alignTop="@+id/textView14"
+        android:layout_alignLeft="@+id/lbl_numero_primera"
+        android:layout_alignStart="@+id/lbl_numero_primera"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/lbl_numero_derrotas"
+        android:textSize="35dp"
+        android:layout_alignTop="@+id/textView15"
+        android:layout_alignLeft="@+id/lbl_numero_victorias"
+        android:layout_alignStart="@+id/lbl_numero_victorias"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tirar dados"
+        android:id="@+id/btn_dados"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/lbl_numero_uno"
+        android:layout_alignStart="@+id/lbl_numero_uno"
+        android:layout_marginTop="30dp"
+        android:layout_alignRight="@+id/lbl_numero_resultado"
+        android:layout_alignEnd="@+id/lbl_numero_resultado"
+        android:height="80dp"
+        android:background="@drawable/rounded_corner5" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Ejercicio_JMedinilla</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_activity_primero">activity_primero</string>
+    <string name="title_activity_primero">Conversor de monedas</string>
+    <string name="title_activity_segundo">Centímetros a pulgadas</string>
+    <string name="title_activity_tercero">Vista web</string>
+    <string name="title_activity_cuarto">Contador café</string>
+    <string name="title_activity_quinto">Suma entre enteros</string>
+    <string name="title_activity_elegir_cambio">ElegirCambio</string>
+    <string name="title_activity_craps">CRAPS</string>
+</resources>
